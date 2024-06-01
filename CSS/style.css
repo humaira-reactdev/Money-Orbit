@@ -1,0 +1,47 @@
+/* ===========FONT IMPORT============== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital@0;1&display=swap');
+
+/* ===========FONT IMPORT END============== */
+
+/* =======================COMMON CSS START=================*/
+body{
+    background: #006769;
+    
+} 
+/* ========================COMMON CSS END================ */
+
+/* ================LOGIN CSS START============== */
+
+.row{
+    display: flex;
+}
+.loginImage img{
+    margin-left: 100px;
+    margin-top: 90px;
+}
+
+.loginForm {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.loginForm h1{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.loginForm h1 span{
+    display: block;
+}
+
+
+
+/* .loginForm .form-control {
+    max-width: 300px;
+    margin: auto;
+} */
+
+
+
+/* ================LOGIN CSS END============== */
