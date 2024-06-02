@@ -86,5 +86,44 @@ body{
     background: white !important;
 }
 
+/* .homepage{
+    display: none;
+} */
 
 /* ================LOGIN CSS END============== */
+
+/* ================NAVBAR CSS START============== */
+.navbar{
+    background:none !important;
+}
+
+.navbar img{
+    width: 40%;
+}
+
+
+
+/* ==================NAVBAR CSS END============== */
+
+/* ==================BANNER CSS START============== */
+
+.banner{
+    background: white;
+    width: 1550px;
+    height: 473px;
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.banner img{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 80px;
+
+}
+
+
+
+/* ==================BANNER CSS END============== */
