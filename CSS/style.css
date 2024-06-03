@@ -163,14 +163,12 @@ body{
 
 /* ==================BALANCE CSS START============== */
 .balanceText{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     margin-top: 80px;
 }
 
-.balanceText h3, .sendMoney h3, .rechargeAccount h3{
+.balanceText h3, .sendMoney h3, .rechargeAccount h3, .transactionHistory h3{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color:#9DDE8B;
@@ -204,12 +202,54 @@ body{
 }
 
 .transactions input{
+    width: 260px;
     margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;  
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+}
+
+.transaction button{
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+    margin-left:50px;
+    background: #9DDE8B !important;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    transition: all linear 0.3s;
+}
+
+/* ==================TRANSACTION CSS END============== */
+
+/* ==================TRANSACTION HISTORY CSS START============== */
+.transactionHistory{
+    margin-top: 50px;
+    text-align: center;
+}
+/* ==================TRANSACTION HISTORY CSS END============== */
+
+/* ==================FOOTER CSS START============== */
+
+.card{
+    margin-top: 100px;
+}
+
+.card .btn{
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;  
+    border: none;
+    background: #006769 !important;
+
 }
 
 
+/* ==================FOOTER CSS END============== */
 
-/* ==================TRANSACTION CSS END============== */
