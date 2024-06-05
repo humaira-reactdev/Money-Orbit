@@ -1,6 +1,5 @@
 // ================VARIABLE DECLARATIONS===================//
 let phoneNumber=document.querySelector('#phone')
-let numberString=phoneNumber.value.toString()
 let pin=document.querySelector('#pin')
 let loginButton=document.querySelector('.loginButton')
 let error=document.querySelector('.error')
@@ -11,7 +10,8 @@ let homepage=document.querySelector('.homepage')
 
 // ================LOGIN PART START===================//
 loginButton.addEventListener('click',()=>{
-    console.log(phoneNumber);
+    let numberString=phoneNumber.value.toString()
+    console.log(numberString);
     if (phoneNumber.value==''|| pin.value==''){
         error.innerHTML="None of the fields can be empty"
     }
