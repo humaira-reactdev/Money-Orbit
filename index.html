@@ -88,7 +88,7 @@
       <div class="container">
         <div class="balanceText">
           <h3>Current balance</h3>
-          <h2>**balance**</h2>
+          <h2 class="showBalance">Tk. <span class="balanceAmt" id="balanceID">0</span></h2>
         </div>
       </div>  
     </div>
@@ -105,17 +105,19 @@
               <input type="number" id="pNumb" placeholder="Enter recipient's phone number"><br>
               <label for="amount">Amount</label><br>
               <input type="number" id="amount" placeholder="Amount you want to send"><br>
-              <label for="pinNumb">PIN</label><br>
-              <input type="password" name="" id="pinNumb" placeholder="Enter your PIN"><br>
+              <!-- <label for="pinNumb">PIN</label><br>
+              <input type="password" name="" id="pinNumb" placeholder="Enter your PIN"><br> -->
+              <p class="error"></p>
               <button type="submit">Send</button>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="rechargeAccount">
               <h3>Recharge Account</h4>
-                <label for="rechamt">Amount</label><br>
-                <input type="number" placeholder="Enter recharge amount"><br>
-                <button type="submit">Recharge</button>
+                <label for="rechAmt">Amount</label><br>
+                <input type="number" placeholder="Enter recharge amount" id="rechAmt"><br>
+                <p class="error2"></p>
+                <button type="submit" class="rechargeButton">Recharge</button>
               </div>
           </div>      
         </div>     

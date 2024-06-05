@@ -92,7 +92,7 @@ input::-webkit-inner-spin-button {
     background: white !important;
 }
 
-.error{
+.error, .error2{
     text-align: center;
     margin-top: 20px;
     font-size: 15px;
@@ -242,6 +242,7 @@ input::-webkit-inner-spin-button {
     font-family: "Montserrat", sans-serif;
     transition: all linear 0.3s;
 }
+
 
 /* ==================TRANSACTION CSS END============== */
 
