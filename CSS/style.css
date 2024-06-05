@@ -86,12 +86,22 @@ body{
     background: white !important;
 }
 
-.loginPage{
-    display: none;
+.error{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 122, 122);
+
 }
-/* .homepage{
+
+/* .loginPage{
     display: none;
 } */
+.homepage{
+    display: none;
+}
 
 /* ================LOGIN CSS END============== */
 
@@ -123,7 +133,7 @@ body{
 
 .banner{
     background: white;
-    width: 1515px;
+    width: 100%;
     height: 473px;
     margin-top: 10px;
     margin-left: auto;
@@ -139,7 +149,7 @@ body{
 
 .bannertext{
     padding-top: 100px;
-    padding-left: 150px;
+    /* padding-left: 150px; */
     font-family: "Montserrat", sans-serif;
     color: #006769;
 }
