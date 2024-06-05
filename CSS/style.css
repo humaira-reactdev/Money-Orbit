@@ -92,7 +92,7 @@ input::-webkit-inner-spin-button {
     background: white !important;
 }
 
-.error, .error2{
+.error, .error2, .error3{
     text-align: center;
     margin-top: 20px;
     font-size: 15px;
