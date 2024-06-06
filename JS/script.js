@@ -13,14 +13,22 @@ let homepage=document.querySelector('.homepage')
 
 let balanceAmt=document.querySelector('.balanceAmt') //shown account balance
 
+//Recharge part variables
 let rechAmt=document.querySelector('#rechAmt') //recharge account with this amount
 let rechargeButton=document.querySelector('.rechargeButton')
 let error2=document.querySelector('.error2')
 
+//send money variables
 let sendButton=document.querySelector('.sendButton')
 let amount=document.querySelector('#amount') //amount to send
 let recPhone=document.querySelector('#pNumb')//recipient's phone number
 let error3=document.querySelector('.error3')
+
+//transaction history variables
+let headings=document.querySelector('.headings')
+let nullState=document.querySelector('.nullState')
+let transactionContainer=document.querySelector('.transaction_container')
+
 // homepage variables end
 
 
@@ -41,6 +49,10 @@ loginButton.addEventListener('click',()=>{
         error.innerHTML=''
         loginPage.style='display:none'
         homepage.style='display:block'
+        headings.style='display:none'
+        transactionContainer.style='display:none'
+        
+        
     }
 })
 
@@ -62,8 +74,12 @@ loginButton.addEventListener('click',()=>{
         else{
             let totalBalance=balanceNumb+rechAmtNumb
             error2.innerHTML=''
+            nullState.innerHTML=''
+            headings.style='display:flex'
             console.log(totalBalance)
             balanceAmt.innerHTML=totalBalance
+            transactionContainer.style='display:flex'
+            rechAmt.value=''
         }
     })
 // ================RECHARGE ACCOUNT END===================//
@@ -91,15 +107,26 @@ sendButton.addEventListener('click',()=>{
     else{
         error3.innerHTML=''
         let totalBalance=balanceNumb-amtNumb
-        // console.log(totalBalance)
+        nullState.innerHTML=''
+        headings.style='display:block'
+        transactionContainer.style='display:flex'
         balanceAmt.innerHTML=totalBalance
+        amount.value=''
+
+        //adding to transaction history
+        let singleTransaction=document.createElement('div')
+        transactionContainer.appendChild(singleTransaction)
     }
     
 })
 
-
 // ===================SEND MONEY END===================//
 
+// ===================TRANSACTION HISTORY START===================//
+
+
+
+// ===================TRANSACTION HISTORY END===================//
 
 
 // ================HOMEPAGE PART END===================//

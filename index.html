@@ -60,7 +60,7 @@
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Services</a></li>
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">About</a></li>
-                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Log out</a></li>
+                  <li class="nav-item"><a class="nav-link active logout" aria-current="page" href="#">Log out</a></li>
                 </ul>
               </div>
             </div>
@@ -98,8 +98,8 @@
     <div class="transaction">
       <div class="container">
         <div class="transactions">
-          <div class="col-lg-6">
-            <div class="sendMoney">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="sendMoney" >
               <h3>Send money</h3>
               <label for="pNumb">Send to</label><br>
               <input type="number" id="pNumb" placeholder="Enter recipient's phone number"><br>
@@ -111,8 +111,8 @@
               <button type="submit" class="sendButton">Send</button>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="rechargeAccount">
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="rechargeAccount" >
               <h3>Recharge Account</h4>
                 <label for="rechAmt">Amount</label><br>
                 <input type="number" placeholder="Enter recharge amount" id="rechAmt"><br>
@@ -129,7 +129,17 @@
     <div class="transactionHistory">
       <div class="container">
         <h3>Transaction history</h3>
-        <p>**Transaction History**</p>
+        <div class="headings">
+          <h5>Date of Transaction</h5>
+          <h5>Action</h5>
+          <h5>Amount</h5>
+        </div>
+        <p class="nullState">No transactions to show</p><br>
+        <div class="transaction_container">
+          <p class="date">date</p>
+          <p class="action">action</p>
+          <p class="amount">Tk. <span>amount</span></p>
+        </div>
       </div>
     </div>
     <!--------------------TRANSACTION HISTORY END-------------------------->
@@ -139,9 +149,9 @@
       <div class="card-header">
     </div>
       <div class="card-body">
-        <h5 class="card-title">Feedback</h5>
+        <h5 class="card-title">Any suggestions?</h5>
         <p class="card-text">We value your feedback. Let us know how we can improve.</p>
-        <a href="#" class="btn btn-primary">Email</a>
+        <a href="mailto:ihumaira.webfront@gmail.com" class="btn btn-primary">Email</a>
       </div>
     </div>
     <!---------------------FOOTER END------------------>
@@ -151,5 +161,10 @@
     
     <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script> window.addEventListener('load', function() {
+      AOS.init();
+  });
+  </script>
 </body>
 </html>
