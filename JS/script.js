@@ -114,7 +114,7 @@ sendButton.addEventListener('click',()=>{
         transactionTable.innerHTML += 
         `<tr>
             <td>${new Date().toLocaleString()}</td>
-            <td>Send</td>
+            <td>Send Money</td>
             <td>Tk. ${amtNumb}</td>
         </tr>
         `
