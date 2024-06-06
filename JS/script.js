@@ -25,10 +25,7 @@ let recPhone=document.querySelector('#pNumb')//recipient's phone number
 let error3=document.querySelector('.error3')
 
 //transaction history variables
-let headings=document.querySelector('.headings')
 let nullState=document.querySelector('.nullState')
-let transactionContainer=document.querySelector('.transaction_container')
-
 // homepage variables end
 
 
@@ -49,10 +46,6 @@ loginButton.addEventListener('click',()=>{
         error.innerHTML=''
         loginPage.style='display:none'
         homepage.style='display:block'
-        headings.style='display:none'
-        transactionContainer.style='display:none'
-        
-        
     }
 })
 
@@ -75,11 +68,17 @@ loginButton.addEventListener('click',()=>{
             let totalBalance=balanceNumb+rechAmtNumb
             error2.innerHTML=''
             nullState.innerHTML=''
-            headings.style='display:flex'
             console.log(totalBalance)
             balanceAmt.innerHTML=totalBalance
-            transactionContainer.style='display:flex'
             rechAmt.value=''
+            const transactionTable = document.querySelector('.transactionHistory .table tbody');
+        transactionTable.innerHTML += 
+        `<tr>
+            <td>${new Date().toLocaleString()}</td>
+            <td>Recharge Account</td>
+            <td>Tk. ${rechAmtNumb}</td>
+        </tr>
+        `
         }
     })
 // ================RECHARGE ACCOUNT END===================//
@@ -108,14 +107,17 @@ sendButton.addEventListener('click',()=>{
         error3.innerHTML=''
         let totalBalance=balanceNumb-amtNumb
         nullState.innerHTML=''
-        headings.style='display:block'
-        transactionContainer.style='display:flex'
         balanceAmt.innerHTML=totalBalance
         amount.value=''
 
-        //adding to transaction history
-        let singleTransaction=document.createElement('div')
-        transactionContainer.appendChild(singleTransaction)
+        const transactionTable = document.querySelector('.transactionHistory .table tbody');
+        transactionTable.innerHTML += 
+        `<tr>
+            <td>${new Date().toLocaleString()}</td>
+            <td>Send</td>
+            <td>Tk. ${amtNumb}</td>
+        </tr>
+        `
     }
     
 })

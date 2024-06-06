@@ -129,17 +129,18 @@
     <div class="transactionHistory">
       <div class="container">
         <h3>Transaction history</h3>
-        <div class="headings">
-          <h5>Date of Transaction</h5>
-          <h5>Action</h5>
-          <h5>Amount</h5>
-        </div>
+        <table class="table rounded rounded-3">
+          <thead>
+            <tr>
+              <th scope="col">Date Of Transaction</th>
+              <th scope="col">Action</th>
+              <th scope="col">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
         <p class="nullState">No transactions to show</p><br>
-        <div class="transaction_container">
-          <p class="date">date</p>
-          <p class="action">action</p>
-          <p class="amount">Tk. <span>amount</span></p>
-        </div>
       </div>
     </div>
     <!--------------------TRANSACTION HISTORY END-------------------------->
@@ -159,9 +160,9 @@
   </div>
     <!--------------------HOME PAGE END-------------->    
     
-    <script src="JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="JS/script.js"></script>
     <script> window.addEventListener('load', function() {
       AOS.init();
   });
