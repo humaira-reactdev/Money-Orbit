@@ -7,12 +7,12 @@ let loginButton=document.querySelector('.loginButton')
 let error=document.querySelector('.error')
 let loginPage=document.querySelector('.loginPage')
 let homepage=document.querySelector('.homepage')
-let logout=document.querySelector('.logout')
 // login page variables end
 
 // homepage variables start
 
 let balanceAmt=document.querySelector('.balanceAmt') //shown account balance
+let logout=document.querySelector('.logout')
 
 //Recharge part variables
 let rechAmt=document.querySelector('#rechAmt') //recharge account with this amount
@@ -34,9 +34,10 @@ let nullState=document.querySelector('.nullState')
 // ================VARIABLE DECLARATIONS===================//
 
 // ================LOGIN PART START===================//
-loginButton.addEventListener('click',()=>{
+loginButton.addEventListener('click',(event)=>{
+    event.preventDefault()
     let numberString=phoneNumber.value.toString()
-    // console.log(numberString);
+    
     if (phoneNumber.value==''|| pin.value==''){
         error.innerHTML="None of the fields can be empty"
     }
