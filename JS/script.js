@@ -7,6 +7,7 @@ let loginButton=document.querySelector('.loginButton')
 let error=document.querySelector('.error')
 let loginPage=document.querySelector('.loginPage')
 let homepage=document.querySelector('.homepage')
+let logout=document.querySelector('.logout')
 // login page variables end
 
 // homepage variables start
@@ -52,6 +53,10 @@ loginButton.addEventListener('click',()=>{
 // ================LOGIN PART END===================//
 
 // ================HOMEPAGE PART START===================//
+logout.addEventListener('click',()=>{
+        loginPage.style='display:block'
+        homepage.style='display:none'
+})
 
 // ================REACHARGE ACCOUNT START===================//
     rechargeButton.addEventListener('click',()=>{
